@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<test thread-count="5" name="OneTime_Payment">
+		<classes>
+			<class name="package_Test.OneTime_Wallet_payment" />
+			<class name="package_Test.OneTime_Card_payment" />
+			<class name="package_Test.OneTime_NetBanking_payment" />
+			<class name="package_Test.OneTime_UPI_payment" />
+		</classes>
+	</test> <!--
+	Test -->
+	<test thread-count="5" name="GEM_Payment">
+		<classes>
+			<class name="package_Test.GEM_UPI_payment" />
+			<class name="package_Test.GEM_Card_payment" />
+		</classes>
+	</test> <!--
+	Test -->
+</suite> <!--
+Suite -->
